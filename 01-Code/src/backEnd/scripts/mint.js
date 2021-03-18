@@ -24,7 +24,7 @@ module.exports = async function(callback) {
     for(let i=0; i<files.length; i++){
       let metadata = JSON.stringify({
         "name": `${/[^.]*/.exec(files[i])[0]}`,
-        "description": "D1g1t@l @rt - X, 24/2/21, ~DAPPU",
+        "description": "Creative Art NFT - X, 24/2/21, ~CAN",
         "image": `https://ipfs.io/ipfs/${upload.cid.toString()}/${files[i]}`
       }, null, '\t');
 
