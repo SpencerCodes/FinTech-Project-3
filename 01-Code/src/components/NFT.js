@@ -11,19 +11,18 @@ import {
   networkSelector
 } from '../store/selectors'
 
-class Main extends Component {
+class NFT extends Component {
   render() {
     try{
       return (
         <div className="Main">
-          <div className="container-fluid mt-5" style={{ color: "#55FF55", "backgroundColor": "#1D1D1D" }}>
+          <div className="container-fluid mt-5" style={{ color: "#55FF55", "backgroundColor": "#000000" }}>
 
           <br></br>
           <div>
             <ReactTypingEffect
               text={[
                 "Welcome to NFT Digital Art - X",
-                "Presented by Dapp University 🎓",
                 "Look around and choose the NFT you like",
                 'Click "Buy" to get UNIQUE 💎 NFT',
                 "Hurry up before all NFTs are sold out!"
@@ -50,7 +49,7 @@ class Main extends Component {
             />
             </div>
             <br></br>&nbsp;
-            <img src={'https://i.gyazo.com/ed6df2ee521e82ae2498da1af3454c52.png'} style={{ width: '1000px', height: '300px' }} alt="adam"/>
+            <img src={'https://cdn.pixabay.com/photo/2015/05/15/14/54/horizon-768759_960_720.jpg'} style={{ width: '1000px', height: '300px' }} alt="adam"/>
             <div className="row">
               <main role="main" className="col-lg-12 d-flex text-center">
                 <div className="content mr-auto ml-auto">
@@ -61,11 +60,11 @@ class Main extends Component {
                       <div className="p-3" key={key}>
                       {this.props.nftState[nft.id]
                         ? <a href={nft.image} target="_blank" rel="noopener noreferrer">
-                            <img src={`data:image/png;base64,${nft.img}`} style={{ border: '1mm ridge #8B8B8B', width: '200px', height: '300px' }} alt="art"/>
+                            <img src={`data:image/png;base64,${nft.img}`} style={{ border: '1mm ridge #fff455', width: '200px', height: '300px' }} alt="art"/>
                           </a>
                         : <a href={nft.image} target="_blank" rel="noopener noreferrer">
                             <img
-                              src={`data:image/png;base64,${nft.img}`} style={{ border: '1mm ridge #55FF55', width: '200px', height: '300px' }} alt="art"
+                              src={`data:image/png;base64,${nft.img}`} style={{ border: '1mm ridge #fff455', width: '200px', height: '300px' }} alt="art"
                             />
                           </a>
                       }
@@ -178,4 +177,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Main)
+export default connect(mapStateToProps)(NFT)

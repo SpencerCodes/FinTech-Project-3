@@ -2,7 +2,8 @@ import { update } from '../store/interactions'
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Navbar from './Navbar'
-import Main from './Main'
+import NFT from './NFT'
+/*import Descrip from './Descrip'*/
 
 class App extends Component {
   async UNSAFE_componentWillMount() {
@@ -28,7 +29,7 @@ class App extends Component {
     return (
       <div className="text-monospace text-center bgDark7">
         <Navbar />
-        <Main />
+        <NFT />
       </div>
     );
   }
