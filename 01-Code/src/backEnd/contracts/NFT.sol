@@ -11,7 +11,7 @@ contract NFT is ERC721, Ownable {
 
   event Purchase(address owner, uint price, uint id, string uri);
 
-  constructor() ERC721("Dapp University", "DAPPU") {
+  constructor() ERC721("Creative Art NFT", "CAN") {
   	_owner = msg.sender;
   }
 
