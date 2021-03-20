@@ -13,8 +13,8 @@ Restart Terminal**
 </br>**```jsipfs daemon```**
 4. **Get project directory (in new terminal window):**
 </br>**```git clone (the project directory given)```**
-5. **Enter project directory and install dependecies:**
-</br>**```cd 01-code && npm i```**
+5. **Install dependecies:**
+</br>**```npm i```**
 6. **Enter truffle developer mode:**
 </br>**```truffle develop```**
 7. **Migrate contracts (locally):**
