@@ -12,9 +12,9 @@ Restart Terminal**
 3. **Run IPFS Node:**
 </br>**```jsipfs daemon```**
 4. **Get project directory (in new terminal window):**
-</br>**```git clone https://github.com/dappuniversity/nft_masterclass_1.git```**
+</br>**```git clone (the project directory given)```**
 5. **Enter project directory and install dependecies:**
-</br>**```cd nft_masterclass_1 && npm i```**
+</br>**```cd 01-code && npm i```**
 6. **Enter truffle developer mode:**
 </br>**```truffle develop```**
 7. **Migrate contracts (locally):**
@@ -28,9 +28,9 @@ Restart Terminal**
 </br>```migrate --reset --network kovan```**
 10. **Mint NFTs on public network (in this case Kovan):**
 </br>**```exec src/backEnd/scripts/mint.js --network kovan```**
-**11. Run dApp:**
+**11. Run:**
 </br>**```npm start```**
-12. **Enter dApp in browser:**
+12. **Enter website in browser:**
 </br>**```localhost:3000```**
 13. **Connect to the dApp:**
 </br>**If running publicly set MetaMask network to Kovan.
